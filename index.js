@@ -72,6 +72,6 @@ mongoose
       console.log(`Listening on port ${port}`);
     });
   })
-  .catch(() => {
-    console.log("Connection to database failed...");
+  .catch((error) => {
+    console.log("Connection to database failed...\n" + error);
   });
